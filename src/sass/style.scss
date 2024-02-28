@@ -130,6 +130,12 @@ body {
 	animation: navItemsAnimation 1s both;
 }
 
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+	background-color: $dark;
+}
+
 // HEADER
 .header {
 	position: relative;
@@ -350,12 +356,12 @@ body {
 
 		&-img {
 			width: 100%;
-			transition: transform .3s;
+			transition: transform 0.3s;
 
 			&:hover {
 				transform: scale(1.1);
 			}
-		}		
+		}
 
 		&-info {
 			padding: 2em;
@@ -364,7 +370,7 @@ body {
 		}
 
 		&-heading {
-			margin-bottom: .5em;
+			margin-bottom: 0.5em;
 			font-size: 2.4rem;
 			color: $dark;
 		}
@@ -390,11 +396,10 @@ body {
 			}
 		}
 	}
-
 }
 
 // REVIEWS
-@media(max-width: 767px) {
+@media (max-width: 767px) {
 	.reviews.section-padding {
 		padding: 6em 0;
 	}
@@ -405,11 +410,11 @@ body {
 		margin: 2em;
 		padding: 2em;
 		border-radius: 8px;
-		box-shadow: 3px 3px 10px rgba(46,46,46,.18);
-		transition: transform .3s;
+		box-shadow: 3px 3px 10px rgba(46, 46, 46, 0.18);
+		transition: transform 0.3s;
 
 		&:hover {
-			transform: scale(.95);
+			transform: scale(0.95);
 		}
 
 		&-img {
@@ -458,7 +463,7 @@ body {
 
 	&__form {
 		&-label {
-			margin-bottom: .5em;
+			margin-bottom: 0.5em;
 			text-transform: uppercase;
 		}
 
@@ -489,7 +494,6 @@ body {
 			}
 		}
 	}
-
 }
 
 // FOOTER
@@ -519,11 +523,11 @@ body {
 		}
 
 		&-link {
-			padding: 0 .3em;
+			padding: 0 0.3em;
 			font-size: 3.6rem;
 			color: $pure-white;
 			text-decoration: none;
-			transition: color .3s;
+			transition: color 0.3s;
 
 			&:first-child {
 				padding-left: 0;
@@ -534,7 +538,7 @@ body {
 			}
 		}
 	}
-	
+
 	&__bottom-text {
 		padding: 2em;
 		text-align: center;
@@ -595,7 +599,7 @@ body {
 			}
 
 			&-heading {
-				margin-bottom: .5em;
+				margin-bottom: 0.5em;
 				font-size: 3.6rem;
 			}
 
